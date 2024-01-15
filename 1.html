@@ -1,68 +1,32 @@
-<!-- <!DOCTYPE html>
-<html ng-app="myApp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
-        
-    </script>
-    <script>
-         var app=angular.module("myApp",[]);
-        app.controller("myCntrl",function($scope){
-            $scope.firstName="Abhishek"
-            $scope.middleName=" "
-            $scope.lastName="Kumar"
-            $scope.date='mydate'
-            
-        });
-    </script>
-</head> 
-<body ng-app="myApp" style="background-color: aqua;">
-    <h2>Angular JS Application to Display Full Name </h2>
-    <div ng-controller="myCntrl">
-        Enter First Name: <input type="text" ng-model="firstName"><br><br>
-        Enter Middle Name: <input type="text" ng-model="middleName"><br><br>
-        Enter Last Name: <input type="text" ng-model="lastName"><br><br>
-        Date:<input type="date" ng-model="mydate"><br><br>
-        Full Name : {{firstName + " " + middleName + " " +
-        lastName}}
-        <!-- Date : {Date} -->
-    <!-- </div>    
-</body>
-</html> --> 
-
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js">
-        
-    </script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"
+    ></script>
     <script>
-        var app=angular.module("myApp",[]);
-        app.controller("myCntrl",function($scope){
-                $scope.fname="Abhishek"
-                $scope.middlename=" "
-                $scope.lname="Kumar"
-                $scope.date="mydate"
-        });
+      var app = angular.module("myApp", []);
+      app.controller("myCntrl", function ($scope) {
+        $scope.firstName = "Abhishek";
+        $scope.middleName = "";
+        $scope.lastName = "Kumar";
+        $scope.date = "mydate";
+      });
     </script>
-        
-        
-<body ng-module="myApp">
-    <h2>Angular JS</h2>
+  </head>
+  <body ng-app="myApp" style="background-color: gold">
+    <h2>Angular JS Application to Display Full Name</h2>
     <div ng-controller="myCntrl">
-        Enter first name:<input type="text" ng-model="fname"><br><br>
-        Enter middle name:<input type="text" ng-model="middlename"><br><br>
-        Enter last name: <input type="text" ng-model="lname"><br><br>
-        Enter date:<intput type="date" ng-model="mydate" ><br><br>
-
-            full name:{{fname+" "+middleName+" "+lname}}
-            date:{date}
-        </div>
-    
-</body>
+      Enter First Name: <input type="text" ng-model="firstName" /><br /><br />
+      Enter Middle Name: <input type="text" ng-model="middleName" /><br /><br />
+      Enter Last Name: <input type="text" ng-model="lastName" /><br /><br />
+      Date:<input type="date" ng-model="mydate" /><br /><br />
+      Full Name : {{firstName + " " + middleName + " " + lastName}}
+      <!-- Date : {Date} -->
+    </div>
+  </body>
 </html>
